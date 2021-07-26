@@ -25,7 +25,6 @@ var SadQuoteList = [
     QuoteObject(quoteEntry: "First, accept sadness. Realize that without losing, winning isn't so great.", authorName: "Alyssa Milano", imageView: "None"),
     QuoteObject(quoteEntry: "Worry never robs tomorrow of its sorrow, it only saps today of its joy.", authorName: "Leo Buscaglia", imageView: "None"),
     QuoteObject(quoteEntry: "Sometimes the smallest step in the right direction ends up being the biggest step of your life. Tip toe if you must, but take the step.", authorName: "Unknown", imageView: "None")
-    
 ]
 
 var AngryQuoteList = [
