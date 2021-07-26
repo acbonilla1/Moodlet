@@ -22,7 +22,15 @@ class DestinationViewController: UIViewController {
         super.viewDidLoad()
         print(quoteText.description, quoteAuthor.description)
         // Do any additional setup after loading the view.
-        view.backgroundColor = backgroundColor
+        
+        
+        if mood == "StressedSegue"{
+            view.backgroundColor = UIColor.init(red: 186/255, green: 136/255, blue: 254/255, alpha: 1)
+        }else{
+            view.backgroundColor = backgroundColor
+        }
+        
+        
         
         quoteBodyLabel.text = quoteText
         authorNameLabel.text! = "- \(quoteAuthor)"
