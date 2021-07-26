@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,33 +22,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKT-8A-eKg">
-                                <rect key="frame" x="181" y="430" width="53" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Angry"/>
-                                <connections>
-                                    <segue destination="YAJ-ny-UeV" kind="show" identifier="AngrySegue" id="upi-Qu-nu3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lu-CK-Mj7">
-                                <rect key="frame" x="20" y="430" width="34" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Sad"/>
-                                <connections>
-                                    <segue destination="YAJ-ny-UeV" kind="show" identifier="SadSegue" id="3Hk-Fz-9DQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2N-tP-LLn">
-                                <rect key="frame" x="316" y="430" width="78" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Stressed"/>
-                                <connections>
-                                    <segue destination="YAJ-ny-UeV" kind="show" identifier="StressedSegue" id="r5H-Je-K4d"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How are you feeling today?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEE-ig-8CF">
                                 <rect key="frame" x="48" y="196" width="318" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,6 +45,39 @@
                                     <constraint firstAttribute="height" constant="89" id="Rj3-Tg-jo7"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXN-C2-F6P">
+                                <rect key="frame" x="49" y="352" width="318" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
+                                <state key="normal" title="Sad">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YAJ-ny-UeV" kind="show" identifier="SadSegue" id="Jyz-gr-dyh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYv-9p-2hv">
+                                <rect key="frame" x="50" y="419" width="318" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
+                                <state key="normal" title="Angry">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YAJ-ny-UeV" kind="show" identifier="AngrySegue" id="RZe-Be-hB6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re2-0l-Hpc">
+                                <rect key="frame" x="49" y="486" width="318" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
+                                <state key="normal" title="Stressed">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YAJ-ny-UeV" kind="show" identifier="StressedSegue" id="zHP-5f-o27"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.7571762595" green="0.61046653689999997" blue="0.84267407660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -98,14 +103,57 @@
                     <view key="view" contentMode="scaleToFill" id="wQP-A3-7je">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IKM-DJ-j7L">
+                                <rect key="frame" x="10" y="108" width="394" height="734"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote Body" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7S7-Tr-wwj">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="176"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpA-Le-efv">
+                                        <rect key="frame" x="0.0" y="186" width="394" height="176"/>
+                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="moJ-6B-XhU">
+                                        <rect key="frame" x="0.0" y="372" width="394" height="176"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                        <state key="normal" title="Generate Quote">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onGenerateQuoteButtonPressed:" destination="YAJ-ny-UeV" eventType="touchUpInside" id="u3Y-Fl-VXg"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VNG-D9-fL1">
+                                        <rect key="frame" x="0.0" y="558" width="394" height="176"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xPy-jg-e3L"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.70060584666845682" green="0.54135970535807454" blue="0.96848052740097046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="IKM-DJ-j7L" firstAttribute="top" secondItem="xPy-jg-e3L" secondAttribute="top" constant="20" id="9OB-IH-HtC"/>
+                            <constraint firstItem="xPy-jg-e3L" firstAttribute="trailing" secondItem="IKM-DJ-j7L" secondAttribute="trailing" constant="10" id="Gja-t9-1ED"/>
+                            <constraint firstItem="xPy-jg-e3L" firstAttribute="bottom" secondItem="IKM-DJ-j7L" secondAttribute="bottom" constant="20" id="Tgf-hl-h3Y"/>
+                            <constraint firstItem="IKM-DJ-j7L" firstAttribute="leading" secondItem="xPy-jg-e3L" secondAttribute="leading" constant="10" id="gZ4-jP-RIg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hy8-cf-UBa"/>
+                    <connections>
+                        <outlet property="authorNameLabel" destination="hpA-Le-efv" id="mfq-wZ-dY3"/>
+                        <outlet property="imageViewAuthor" destination="VNG-D9-fL1" id="5ou-Ld-oCi"/>
+                        <outlet property="quoteBodyLabel" destination="7S7-Tr-wwj" id="8aP-ie-HAe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qL-Y7-Tdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8695652173915" y="63.616071428571423"/>
+            <point key="canvasLocation" x="2040.5797101449277" y="63.616071428571423"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="47e-I7-T8V">
@@ -127,13 +175,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="r5H-Je-K4d"/>
+        <segue reference="RZe-Be-hB6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="squigglyline" width="2000" height="359"/>
         <image name="squigglyline2" width="2000" height="359"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
