@@ -14,11 +14,9 @@ struct QuoteObject {
 }
 
 
-var QuoteList = [
-    QuoteObject(quoteEntry: "This is a quote.", authorName: "Me", imageView: "None"),
-    QuoteObject(quoteEntry: "This is a quote as well.", authorName: "Me (again)", imageView: "None"),
-    QuoteObject(quoteEntry: "Quote quote quote", authorName: "Me (again)", imageView: "None"),
-    QuoteObject(quoteEntry: "this is a quote for the fourth time", authorName: "barack obama", imageView: "None"),
+var MenuQuoteList = [
+    QuoteObject(quoteEntry: "This is an awesome app.", authorName: "Andrew Bonilla", imageView: "None"),
+    QuoteObject(quoteEntry: "This is a quote as well.", authorName: "Andrew Bonilla", imageView: "None"),
 ]
 
 var SadQuoteList = [
