@@ -13,42 +13,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("🍌")
-
-        
-        
-    
-        
-        
     }
 
-    @IBAction func onSadButtonPressed(_ sender: UIButton) {
-        
-        let randomQuote = SadQuoteList.randomElement()
-        let quoteText = randomQuote?.quoteEntry
-        let quoteAuthor = randomQuote?.authorName
-        
-        print(quoteText?.description, quoteAuthor?.description)
-        
-//        for quote in QuoteList{
-//            let quoteText = quote.quoteEntry
-//            let authorName = quote.authorName
-//            print(quoteText, authorName)
-//        }
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! DestinationViewController
+        if segue.identifier == "SadSegue"{
+            let randomQuote = SadQuoteList.randomElement()
+            dvc.quoteText = randomQuote!.quoteEntry
+            dvc.quoteAuthor = randomQuote!.authorName
+        }else if segue.identifier == "AngrySegue"{
+            let randomQuote = AngryQuoteList.randomElement()
+            dvc.quoteText = randomQuote!.quoteEntry
+            dvc.quoteAuthor = randomQuote!.authorName
+        }else if segue.identifier == "StressedSegue"{
+            let randomQuote = StressedQuoteList.randomElement()
+            dvc.quoteText = randomQuote!.quoteEntry
+            dvc.quoteAuthor = randomQuote!.authorName
+        }
     }
-    
-    @IBAction func onAngryButtonPressed(_ sender: UIButton) {
-        let randomQuote = AngryQuoteList.randomElement()
-        let quoteText = randomQuote?.quoteEntry
-        let quoteAuthor = randomQuote?.authorName
-        
-        print(quoteText?.description, quoteAuthor?.description)
-        
-//        for quote in QuoteList{
-//            let quoteText = quote.quoteEntry
-//            let authorName = quote.authorName
-//            print(quoteText, authorName)
-//        }
-    }
+
 }
 
