@@ -101,7 +101,16 @@ class DestinationViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+    }*/
+
+    @IBAction func onSharedPressed(_ sender: Any) {
+        print("share button pressed")
+        let activityVC = UIActivityViewController(activityItems: [" \"\(LastQuote.quoteEntry)\" - \(LastQuote.authorName)"], applicationActivities: nil)
+        activityVC.popoverPresentationController?.sourceView = self.view
+        
+        self.present(activityVC, animated: true, completion: nil)
+        
     }
-    */
+    
 
 }

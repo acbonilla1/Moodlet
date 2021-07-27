@@ -143,11 +143,17 @@
                     </view>
                     <navigationItem key="navigationItem" id="hy8-cf-UBa">
                         <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="Zwe-cp-FyY">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ac1-Ky-53W">
-                                <rect key="frame" x="302" y="13" width="92" height="30"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ac1-Ky-53W">
+                                <rect key="frame" x="302" y="13" width="19" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                                <connections>
+                                    <action selector="onSharedPressed:" destination="YAJ-ny-UeV" eventType="touchUpInside" id="Ry5-2l-2dd"/>
+                                </connections>
                             </button>
+                            <connections>
+                                <action selector="onShareButtonPressed:" destination="xK9-6K-h3Z" id="rcl-Yw-DyO"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -157,6 +163,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qL-Y7-Tdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xK9-6K-h3Z" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3860.8695652173915" y="63.616071428571423"/>
         </scene>
@@ -332,6 +339,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="line" width="2000" height="41"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="squigglyline" width="2000" height="359"/>
         <image name="squigglyline2" width="2000" height="359"/>
         <systemColor name="placeholderTextColor">
