@@ -12,9 +12,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("🍌")
-        
-
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -26,6 +23,10 @@ class ViewController: UIViewController {
             dvc.backgroundColor = .systemYellow
             dvc.mood = segue.identifier!
             dvc.authorImageName = randomQuote!.imageView
+            
+            dvc.LastQuoteList = [QuoteObject]()
+            dvc.LastQuoteList.append(contentsOf: SadQuoteList)
+            dvc.LastQuote = randomQuote!
         }else if segue.identifier == "AngrySegue"{
             let randomQuote = AngryQuoteList.randomElement()
             dvc.quoteText = randomQuote!.quoteEntry
@@ -33,6 +34,10 @@ class ViewController: UIViewController {
             dvc.backgroundColor = .systemBlue
             dvc.mood = segue.identifier!
             dvc.authorImageName = randomQuote!.imageView
+            
+            dvc.LastQuoteList = [QuoteObject]()
+            dvc.LastQuoteList.append(contentsOf: AngryQuoteList)
+            dvc.LastQuote = randomQuote!
         }else if segue.identifier == "StressedSegue"{
             let randomQuote = StressedQuoteList.randomElement()
             dvc.quoteText = randomQuote!.quoteEntry
@@ -40,6 +45,10 @@ class ViewController: UIViewController {
             dvc.backgroundColor = .purple
             dvc.mood = segue.identifier!
             dvc.authorImageName = randomQuote!.imageView
+            
+            dvc.LastQuoteList = [QuoteObject]()
+            dvc.LastQuoteList.append(contentsOf: StressedQuoteList)
+            dvc.LastQuote = randomQuote!
         }
     }
 }

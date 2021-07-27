@@ -20,11 +20,11 @@ var MenuQuoteList = [
 ]
 
 var SadQuoteList = [
-    QuoteObject(quoteEntry: "Some days are just bad days, that's all. You have to experience sadness to know happiness, and I remind myself that not every day is going to be a good day, that's just the way it is!", authorName: "Dita Von Teese", imageView: "None"),
-    QuoteObject(quoteEntry: "Heavy hearts, like heavy clouds in the sky, are best relieved by the letting of a little water.", authorName: "Christopher Morley", imageView: "None"),
-    QuoteObject(quoteEntry: "First, accept sadness. Realize that without losing, winning isn't so great.", authorName: "Alyssa Milano", imageView: "None"),
-    QuoteObject(quoteEntry: "Worry never robs tomorrow of its sorrow, it only saps today of its joy.", authorName: "Leo Buscaglia", imageView: "None"),
-    QuoteObject(quoteEntry: "Sometimes the smallest step in the right direction ends up being the biggest step of your life. Tip toe if you must, but take the step.", authorName: "Unknown", imageView: "None")
+    QuoteObject(quoteEntry: "Some days are just bad days, that's all. You have to experience sadness to know happiness, and I remind myself that not every day is going to be a good day, that's just the way it is!", authorName: "Dita Von Teese", imageView: "DitaVonTeese"),
+    QuoteObject(quoteEntry: "Heavy hearts, like heavy clouds in the sky, are best relieved by the letting of a little water.", authorName: "Christopher Morley", imageView: "ChristopherMorley"),
+    QuoteObject(quoteEntry: "First, accept sadness. Realize that without losing, winning isn't so great.", authorName: "Alyssa Milano", imageView: "AlyssaMilano"),
+    QuoteObject(quoteEntry: "Worry never robs tomorrow of its sorrow, it only saps today of its joy.", authorName: "Leo Buscaglia", imageView: "LeoBuscaglia"),
+    QuoteObject(quoteEntry: "Sometimes the smallest step in the right direction ends up being the biggest step of your life. Tip toe if you must, but take the step.", authorName: "Naeem Callaway", imageView: "NaeemCallaway")
 ]
 
 var AngryQuoteList = [
