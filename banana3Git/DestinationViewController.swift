@@ -68,7 +68,6 @@ class DestinationViewController: UIViewController {
         }
 
         let randomQuote = LastQuoteList.randomElement()
-        print(LastQuoteList.count)
         quoteBodyLabel.text = randomQuote!.quoteEntry
         authorNameButton.setTitle("- \(randomQuote!.authorName)", for: .normal)
         imageViewAuthor.image = UIImage(named: randomQuote!.imageView)
@@ -76,7 +75,6 @@ class DestinationViewController: UIViewController {
         let index = LastQuoteList.firstIndex(where: {$0.quoteEntry == randomQuote!.quoteEntry})
         LastQuoteList.remove(at: (index)!)
         
-        print(optionalOldQuote.quoteEntry)
         if optionalOldQuote.quoteEntry == LastQuote.quoteEntry{
             LastQuoteList.append(optionalOldQuote)
 //            print("Added \(optionalOldQuote.authorName)")
