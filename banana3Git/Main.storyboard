@@ -34,6 +34,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MXN-C2-F6P">
                                 <rect key="frame" x="48" y="352" width="318" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77771153356765699" green="0.62225275759440724" blue="0.84267407660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
                                 <state key="normal" title="Sad">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -45,6 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYv-9p-2hv">
                                 <rect key="frame" x="48" y="419" width="318" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77771153356765699" green="0.62225275759440724" blue="0.84267407660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
                                 <state key="normal" title="Angry">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,6 +58,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Re2-0l-Hpc">
                                 <rect key="frame" x="48" y="486" width="318" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.77771153356765699" green="0.62225275759440724" blue="0.84267407660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="AlNile" family="Al Nile" pointSize="20"/>
                                 <state key="normal" title="Stressed">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -138,7 +141,15 @@
                             <constraint firstItem="IKM-DJ-j7L" firstAttribute="leading" secondItem="xPy-jg-e3L" secondAttribute="leading" constant="10" id="gZ4-jP-RIg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hy8-cf-UBa"/>
+                    <navigationItem key="navigationItem" id="hy8-cf-UBa">
+                        <barButtonItem key="rightBarButtonItem" title="Item" style="plain" id="Zwe-cp-FyY">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="Ac1-Ky-53W">
+                                <rect key="frame" x="302" y="13" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="authorNameLabel" destination="hpA-Le-efv" id="mfq-wZ-dY3"/>
                         <outlet property="imageViewAuthor" destination="VNG-D9-fL1" id="5ou-Ld-oCi"/>
@@ -206,8 +217,11 @@
                                 <rect key="frame" x="51" y="580" width="312" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="312" id="8xy-Gk-XzX"/>
+                                    <constraint firstAttribute="width" secondItem="LJI-G5-iR0" secondAttribute="height" multiplier="104:19" id="EB1-wB-6Kd"/>
                                     <constraint firstAttribute="height" constant="57" id="FGg-Xq-cqY"/>
                                     <constraint firstAttribute="width" secondItem="LJI-G5-iR0" secondAttribute="height" multiplier="104:19" id="ckg-73-Zph"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="312" id="gEE-c3-aza"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="57" id="nQp-LL-vAu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -217,17 +231,22 @@
                                 <rect key="frame" x="51" y="645" width="312" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="4eG-Hn-ndZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="312" id="6oS-2c-1Fk"/>
                                     <constraint firstAttribute="width" secondItem="1xx-jr-Xol" secondAttribute="height" multiplier="52:3" id="CTX-MT-v1s"/>
                                     <constraint firstAttribute="width" constant="312" id="OEZ-EN-VC1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="SXK-LP-tSd"/>
+                                    <constraint firstAttribute="width" secondItem="1xx-jr-Xol" secondAttribute="height" multiplier="52:3" id="pp4-GE-OyV"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" systemColor="placeholderTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hj6-yx-JY9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hj6-yx-JY9">
                                 <rect key="frame" x="20" y="487" width="374" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79532784340016061" green="0.65421424481695656" blue="0.86080460058989905" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="a8O-yx-W6K"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -241,6 +260,7 @@
                         <color key="backgroundColor" red="0.7571762595" green="0.61046653689999997" blue="0.84267407660000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="zaa-fy-Ade" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" constant="64" id="07g-2x-Aid"/>
+                            <constraint firstItem="Hj6-yx-JY9" firstAttribute="top" secondItem="3Ax-pM-1GR" secondAttribute="bottom" constant="80" id="0WV-fe-ULm"/>
                             <constraint firstItem="kav-qd-ghx" firstAttribute="trailing" secondItem="RKU-rp-tkz" secondAttribute="trailing" constant="66" id="3IM-Je-4rZ"/>
                             <constraint firstItem="wao-XW-kZ1" firstAttribute="trailing" secondItem="kav-qd-ghx" secondAttribute="trailing" id="7cC-iu-Lfd"/>
                             <constraint firstItem="1xx-jr-Xol" firstAttribute="top" secondItem="LJI-G5-iR0" secondAttribute="bottom" constant="8" symbolic="YES" id="7w0-sd-UUI"/>
@@ -260,14 +280,21 @@
                             <constraint firstItem="kav-qd-ghx" firstAttribute="trailing" secondItem="3Ax-pM-1GR" secondAttribute="trailing" constant="136" id="YAI-um-TI3"/>
                             <constraint firstItem="LJI-G5-iR0" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" constant="51" id="YtE-7v-Yfr"/>
                             <constraint firstItem="RKU-rp-tkz" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" constant="66" id="Zkm-YA-1EU"/>
+                            <constraint firstItem="Hj6-yx-JY9" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" constant="20" id="aPs-YR-cud"/>
                             <constraint firstItem="kav-qd-ghx" firstAttribute="trailing" secondItem="zaa-fy-Ade" secondAttribute="trailing" constant="64" id="aSn-9u-2nl"/>
                             <constraint firstItem="1xx-jr-Xol" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" constant="51" id="efK-2a-9eh"/>
                             <constraint firstItem="kav-qd-ghx" firstAttribute="trailing" secondItem="RKU-rp-tkz" secondAttribute="trailing" constant="66" id="f1y-hB-ddc"/>
                             <constraint firstItem="wao-XW-kZ1" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" id="gVp-8g-OFF"/>
+                            <constraint firstItem="kav-qd-ghx" firstAttribute="trailing" secondItem="Hj6-yx-JY9" secondAttribute="trailing" constant="20" id="hQY-sE-NY0"/>
+                            <constraint firstItem="LJI-G5-iR0" firstAttribute="top" secondItem="Hj6-yx-JY9" secondAttribute="bottom" constant="46" id="hh3-zz-xxY"/>
                             <constraint firstItem="RKU-rp-tkz" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" constant="66" id="ltw-7Q-7wy"/>
+                            <constraint firstItem="LJI-G5-iR0" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" constant="51" id="mc7-Un-hzp"/>
+                            <constraint firstItem="1xx-jr-Xol" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" constant="51" id="nTF-Ha-WgX"/>
                             <constraint firstItem="Prp-LE-Qsu" firstAttribute="leading" secondItem="kav-qd-ghx" secondAttribute="leading" id="nzc-0q-RiU"/>
+                            <constraint firstItem="kav-qd-ghx" firstAttribute="trailing" secondItem="1xx-jr-Xol" secondAttribute="trailing" constant="51" id="p5m-WV-QUl"/>
                             <constraint firstItem="RKU-rp-tkz" firstAttribute="top" secondItem="Prp-LE-Qsu" secondAttribute="bottom" constant="100" id="rhg-Vy-LRO"/>
                             <constraint firstItem="zaa-fy-Ade" firstAttribute="top" secondItem="RKU-rp-tkz" secondAttribute="bottom" constant="25" id="sci-hd-5yv"/>
+                            <constraint firstItem="kav-qd-ghx" firstAttribute="trailing" secondItem="LJI-G5-iR0" secondAttribute="trailing" constant="51" id="smz-33-cmR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dH7-wh-Hjh"/>
