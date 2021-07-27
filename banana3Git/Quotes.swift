@@ -28,7 +28,7 @@ var SadQuoteList = [
 ]
 
 var AngryQuoteList = [
-    QuoteObject(quoteEntry:  "In times of great stress or adversity, it's always best to keep busy, to plow your anger and your energy into something positive.", authorName: "Lee ", imageView: ""),
+    QuoteObject(quoteEntry:  "In times of great stress or adversity, it's always best to keep busy, to plow your anger and your energy into something positive.", authorName: "Lee ", imageView: "Lee "),
     QuoteObject(quoteEntry: "Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.", authorName: "Mark Twain", imageView: "Mark"),
     QuoteObject(quoteEntry: "The greatest remedy for anger is delay.", authorName: "Lucius Annaeus Seneca", imageView: "Lucius"),
     QuoteObject(quoteEntry: "To be angry is to revenge the faults of others on ourselves.", authorName: "Alexander Pope", imageView: "Pope"),
@@ -36,8 +36,8 @@ var AngryQuoteList = [
 ]
 
 var StressedQuoteList = [
-    QuoteObject(quoteEntry: "Everyone has the ability to increase resilience to stress. It requires hard work and dedication, but over time, you can equip yourself to handle whatever life throws your way without adverse effects to your health. Training your brain to manage stress won't just affect the quality of your life, but perhaps even the length of it.", authorName: "Amy Morin", imageView: "None"),
-    QuoteObject(quoteEntry: "If you are lucky enough to never experience any sort of adversity, we won't know how resilient you are. It's only when you're faced with obstacles, stress, and other environmental threats that resilience, or the lack of it, emerges: Do you succumb or do you surmount?", authorName: "Maria Konnikova", imageView: "None"),
+    QuoteObject(quoteEntry: "Everyone has the ability to increase resilience to stress. It requires hard work and dedication, but over time, you can equip yourself to handle whatever life throws your way without adverse effects to your health. Training your brain to manage stress won't just affect the quality of your life, but perhaps even the length of it.", authorName: "Amy Morin", imageView: "Amy Morin"),
+    QuoteObject(quoteEntry: "If you are lucky enough to never experience any sort of adversity, we won't know how resilient you are. It's only when you're faced with obstacles, stress, and other environmental threats that resilience, or the lack of it, emerges: Do you succumb or do you surmount?", authorName: "Maria Konnikova", imageView: "Maria"),
     QuoteObject(quoteEntry: "You should never view your challenges as a disadvantage. Instead, it's important for you to understand that your experience facing and overcoming adversity is actually one of your biggest advantages.", authorName: "Michelle Obama", imageView: "MichelleObamaImage"),
     QuoteObject(quoteEntry: "Take deep breathes and move on.", authorName: "Unknown", imageView: "None"),
 ]
