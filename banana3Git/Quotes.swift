@@ -28,10 +28,10 @@ var SadQuoteList = [
 ]
 
 var AngryQuoteList = [
-    QuoteObject(quoteEntry:  "In times of great stress or adversity, it's always best to keep busy, to plow your anger and your energy into something positive.", authorName: "Lee Lacocca", imageView: "None"),
-    QuoteObject(quoteEntry: "Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.", authorName: "Mark Twain", imageView: "None"),
-    QuoteObject(quoteEntry: "The greatest remedy for anger is delay.", authorName: "Lucius Annaeus Seneca", imageView: "None"),
-    QuoteObject(quoteEntry: "To be angry is to revenge the faults of others on ourselves.", authorName: "Alexander Pope", imageView: "None"),
+    QuoteObject(quoteEntry:  "In times of great stress or adversity, it's always best to keep busy, to plow your anger and your energy into something positive.", authorName: "Lee ", imageView: ""),
+    QuoteObject(quoteEntry: "Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.", authorName: "Mark Twain", imageView: "Mark"),
+    QuoteObject(quoteEntry: "The greatest remedy for anger is delay.", authorName: "Lucius Annaeus Seneca", imageView: "Lucius"),
+    QuoteObject(quoteEntry: "To be angry is to revenge the faults of others on ourselves.", authorName: "Alexander Pope", imageView: "Pope"),
     QuoteObject(quoteEntry: "You are not the anger, you are the awereness.", authorName: "Unknown", imageView: "None"),
 ]
 
