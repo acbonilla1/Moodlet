@@ -15,11 +15,11 @@ class DestinationViewController: UIViewController {
     var mood:String = ""
     
     var LastQuoteList = [QuoteObject]()
-    var LastQuote:QuoteObject = QuoteObject(quoteEntry: "", authorName: "", imageView: "")
+    var LastQuote:QuoteObject = QuoteObject(quoteEntry: "", authorName: "", imageView: "", wikiLink: "")
     
     @IBOutlet weak var quoteBodyLabel: UILabel!
-    @IBOutlet weak var authorNameLabel: UILabel!
     @IBOutlet weak var imageViewAuthor: UIImageView!
+    @IBOutlet weak var authorNameButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class DestinationViewController: UIViewController {
         }
         
         quoteBodyLabel.text = quoteText
-        authorNameLabel.text! = "- \(quoteAuthor)"
+        authorNameButton.setTitle("- \(quoteAuthor)", for: .normal)
         imageViewAuthor.image = UIImage(named: authorImageName)
 
         let index = LastQuoteList.firstIndex(where: {$0.quoteEntry == LastQuote.quoteEntry})
@@ -44,27 +44,34 @@ class DestinationViewController: UIViewController {
     }
     
     @IBAction func onGenerateQuoteButtonPressed(_ sender: UIButton) {
-        print(LastQuoteList.count)
-        var optionalOldQuote = QuoteObject(quoteEntry: "", authorName: "", imageView: "")
+        var optionalOldQuote = QuoteObject(quoteEntry: "", authorName: "", imageView: "", wikiLink: "")
+        
         if LastQuoteList.count <= 0{
+            print("Loaded into the <=0 ")
             if mood == "SadSegue"{
                 LastQuoteList = SadQuoteList
             }else if mood == "AngrySegue"{
                 LastQuoteList = AngryQuoteList
             }else if mood == "StressedSegue"{
                 LastQuoteList = StressedQuoteList
+            }else if mood == "UnmotivatedSegue"{
+                LastQuoteList = UnmotivatedQuoteList
+            }else if mood == "GuiltySegue"{
+                LastQuoteList = GuiltyQuoteList
             }
             let indexOfOldQuote = LastQuoteList.firstIndex(where: {$0.quoteEntry == LastQuote.quoteEntry})
-            LastQuoteList.remove(at: (indexOfOldQuote)!)
-            optionalOldQuote = LastQuote
+            if indexOfOldQuote != nil{
+                LastQuoteList.remove(at: (indexOfOldQuote)!)
+                optionalOldQuote = LastQuote
+            }
 //            print("Removed \(LastQuote.authorName)")
         }
 
         let randomQuote = LastQuoteList.randomElement()
+        print(LastQuoteList.count)
         quoteBodyLabel.text = randomQuote!.quoteEntry
-        authorNameLabel.text = "- \(randomQuote!.authorName)"
+        authorNameButton.setTitle("- \(randomQuote!.authorName)", for: .normal)
         imageViewAuthor.image = UIImage(named: randomQuote!.imageView)
-        
         
         let index = LastQuoteList.firstIndex(where: {$0.quoteEntry == randomQuote!.quoteEntry})
         LastQuoteList.remove(at: (index)!)
@@ -104,7 +111,6 @@ class DestinationViewController: UIViewController {
     }*/
 
     @IBAction func onSharedPressed(_ sender: Any) {
-        print("share button pressed")
         let activityVC = UIActivityViewController(activityItems: [" \"\(LastQuote.quoteEntry)\" - \(LastQuote.authorName)"], applicationActivities: nil)
         activityVC.popoverPresentationController?.sourceView = self.view
         
@@ -112,5 +118,10 @@ class DestinationViewController: UIViewController {
         
     }
     
-
+    @IBAction func onAuthorButtonPressed(_ sender: UIButton) {
+        if let url = URL(string: LastQuote.wikiLink) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
 }

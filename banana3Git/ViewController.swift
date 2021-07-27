@@ -49,6 +49,29 @@ class ViewController: UIViewController {
             dvc.LastQuoteList = [QuoteObject]()
             dvc.LastQuoteList.append(contentsOf: StressedQuoteList)
             dvc.LastQuote = randomQuote!
+        }else if segue.identifier == "UnmotivatedSegue"{
+            let randomQuote = UnmotivatedQuoteList.randomElement()
+            dvc.quoteText = randomQuote!.quoteEntry
+            dvc.quoteAuthor = randomQuote!.authorName
+            dvc.backgroundColor = .systemRed
+            dvc.mood = segue.identifier!
+            dvc.authorImageName = randomQuote!.imageView
+            
+            dvc.LastQuoteList = [QuoteObject]()
+            dvc.LastQuoteList.append(contentsOf: UnmotivatedQuoteList)
+            dvc.LastQuote = randomQuote!
+        }else if segue.identifier == "GuiltySegue"{
+            let randomQuote = GuiltyQuoteList.randomElement()
+            dvc.quoteText = randomQuote!.quoteEntry
+            dvc.quoteAuthor = randomQuote!.authorName
+            dvc.backgroundColor = .systemGreen
+            dvc.mood = segue.identifier!
+            dvc.authorImageName = randomQuote!.imageView
+            
+            dvc.LastQuoteList = [QuoteObject]()
+            dvc.LastQuoteList.append(contentsOf: GuiltyQuoteList)
+            dvc.LastQuote = randomQuote!
+            
         }
     }
 }
