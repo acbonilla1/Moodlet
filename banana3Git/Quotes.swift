@@ -17,7 +17,7 @@ struct QuoteObject {
 
 var MenuQuoteList = [
     QuoteObject(quoteEntry: "This is an awesome app.", authorName: "Andrew Bonilla", imageView: "None", wikiLink: ""),
-    QuoteObject(quoteEntry: "This is a quote as well.", authorName: "Andrew Bonilla", imageView: "None", wikiLink: ""),
+    QuoteObject(quoteEntry: "I don't know what a menu screen is for", authorName: "KJ", imageView: "None", wikiLink: ""),
 ]
 
 var SadQuoteList = [
@@ -28,7 +28,7 @@ var SadQuoteList = [
     QuoteObject(quoteEntry: "Sometimes the smallest step in the right direction ends up being the biggest step of your life. Tip toe if you must, but take the step.", authorName: "Naeem Callaway", imageView: "NaeemCallaway", wikiLink: ""),
     QuoteObject(quoteEntry: "We never taste a perfect joy; our happiest successes are mixed with sadness.", authorName: "Pierre Corneille", imageView: "PierreCorneille", wikiLink: "https://en.wikipedia.org/wiki/Pierre_Corneille"),
     QuoteObject(quoteEntry: "Happiness is not being pained in body or troubled in mind.", authorName: "Thomas Jefferson", imageView: "ThomasJefferson", wikiLink: "https://en.wikipedia.org/wiki/Thomas_Jefferson"),
-    QuoteObject(quoteEntry: "Happiness is always a by-product. It is probably a matter of temperament, and for anything I know it may be glandular. But it is not something that can be demanded from life, and if you are not happy you had better stop worrying about it and see what treasures you can pluck from your own brand of unhappiness.", authorName: "Robertson Davies", imageView: "RobertsonDavies", wikiLink: "https://en.wikipedia.org/wiki/Robertson_Davies")
+    QuoteObject(quoteEntry: "Happiness is always a by-product. It is probably a matter of temperament, and for anything I know it may be glandular. But it is not something that can be demanded from life, and if you are not happy you had better stop worrying about it and see what treasures you can pluck from your own brand of unhappiness.", authorName: "Robertson Davies", imageView: "RobertsonDavies", wikiLink: "https://en.wikipedia.org/wiki/Robertson_Davies"),
     
 ]
 
@@ -39,6 +39,8 @@ var AngryQuoteList = [
     QuoteObject(quoteEntry: "To be angry is to revenge the faults of others on ourselves.", authorName: "Alexander Pope", imageView: "Pope", wikiLink: "https://en.wikipedia.org/wiki/Alexander_Pope"),
     QuoteObject(quoteEntry: "You are not the anger, you are the awareness.", authorName: "Unknown", imageView: "None", wikiLink: ""),
     QuoteObject(quoteEntry: "Happiness is not the absence of problems, it’s the ability to deal with them.", authorName: "Steve Maraboli", imageView: "SteveMaraboli", wikiLink: ""),
+    QuoteObject(quoteEntry: "All happiness or unhappiness solely depends upon the quality of the object to which we are attached by love.", authorName: "Baruch Spinoza", imageView: "BaruchSpinoza", wikiLink: "https://en.wikipedia.org/wiki/Baruch_Spinoza"),
+    QuoteObject(quoteEntry: "Happiness consists more in conveniences of pleasure that occur everyday than in great pieces of good fortune that happen but seldom.", authorName: "Benjamin Franklin", imageView: "BenjaminFranklin", wikiLink: "https://en.wikipedia.org/wiki/Benjamin_Franklin")
 ]
 
 var StressedQuoteList = [
@@ -46,9 +48,12 @@ var StressedQuoteList = [
     QuoteObject(quoteEntry: "If you are lucky enough to never experience any sort of adversity, we won't know how resilient you are. It's only when you're faced with obstacles, stress, and other environmental threats that resilience, or the lack of it, emerges: Do you succumb or do you surmount?", authorName: "Maria Konnikova", imageView: "Maria", wikiLink: "https://en.wikipedia.org/wiki/Maria_Konnikova"),
     QuoteObject(quoteEntry: "You should never view your challenges as a disadvantage. Instead, it's important for you to understand that your experience facing and overcoming adversity is actually one of your biggest advantages.", authorName: "Michelle Obama", imageView: "MichelleObamaImage", wikiLink: "https://en.wikipedia.org/wiki/Michelle_Obama"),
     QuoteObject(quoteEntry: "Take deep breaths and move on.", authorName: "Unknown", imageView: "None", wikiLink: ""),
-    QuoteObject(quoteEntry: "We're taught to be ashamed of confusion, anger, fear and sadness, and to me they're of equal value to happiness, excitement and inspiration.", authorName: "Alanis Morissette", imageView: "AlanisMorissette", wikiLink: "https://en.wikipedia.org/wiki/Alanis_Morissette")
-    
-    
+    QuoteObject(quoteEntry: "We're taught to be ashamed of confusion, anger, fear and sadness, and to me they're of equal value to happiness, excitement and inspiration.", authorName: "Alanis Morissette", imageView: "AlanisMorissette", wikiLink: "https://en.wikipedia.org/wiki/Alanis_Morissette"),
+    QuoteObject(quoteEntry: "Life is about not knowing, having to change, taking the moment and making the best of it, without knowing what's going to happen next.", authorName: "Gilda Radner", imageView: "GildaRadner", wikiLink: "https://en.wikipedia.org/wiki/Gilda_Radner"),
+    QuoteObject(quoteEntry: "To achieve great things, two things are needed: a plan and not quite enough time.", authorName: "Leonard Bernstein", imageView: "LeonardBernstein", wikiLink: "https://en.wikipedia.org/wiki/Leonard_Bernstein"),
+    QuoteObject(quoteEntry: "Stress should be a powerful driving force, not an obstacle.", authorName: "Bill Phillips", imageView: "BillPhillips", wikiLink: "https://en.wikipedia.org/wiki/Bill_Phillips_(author)"),
+    QuoteObject(quoteEntry: "Calmness is the cradle of power.", authorName: "Josiah Gilbert Holland", imageView: "Josiah", wikiLink: "https://en.wikipedia.org/wiki/Josiah_Gilbert_Holland"),
+    QuoteObject(quoteEntry: "The truth is that stress doesn’t come from your boss, your kids, your spouse, traffic jams, health challenges, or other circumstances. It comes from your thoughts about your circumstances.", authorName: "Andrew Bernstein", imageView: "AndrewBernstein", wikiLink: "https://en.wikipedia.org/wiki/Andrew_Bernstein")
 ]
 
 var UnmotivatedQuoteList = [
@@ -59,6 +64,9 @@ var UnmotivatedQuoteList = [
     QuoteObject(quoteEntry: "It is during our darkest moments that we must focus to see the light.", authorName: "Aristotle Onassis", imageView: "AristotleOnassis", wikiLink: "https://en.wikipedia.org/wiki/Aristotle_Onassis"),
     QuoteObject(quoteEntry: "The question isn’t who is going to let me; it’s who is going to stop me.", authorName: "Ayn Rand", imageView: "AynRand", wikiLink: "https://en.wikipedia.org/wiki/Ayn_Rand"),
     QuoteObject(quoteEntry: "Always make a total effort, even when the odds are against you.", authorName: "Arnold Palmer", imageView: "ArnoldPalmer", wikiLink: "https://en.wikipedia.org/wiki/Arnold_Palmer"),
+    QuoteObject(quoteEntry: "Some people don't like change, but you need to embrace change if the alternative is disaster.", authorName: "Elon Musk", imageView: "ElonMusk", wikiLink: "https://en.wikipedia.org/wiki/Elon_Musk"),
+    QuoteObject(quoteEntry: "Progress is impossible without change, and those who cannot change their minds cannot change anything.", authorName: "George Bernard Shaw", imageView: "GeorgeShaw", wikiLink: "https://en.wikipedia.org/wiki/George_Bernard_Shaw"),
+    QuoteObject(quoteEntry: "Just don't give up trying to do what you really want to do. Where there is love and inspiration, I don't think you can go wrong.", authorName: "Ella Fitzgerald", imageView: "EllaFitzgerald", wikiLink: "https://en.wikipedia.org/wiki/Ella_Fitzgerald"),
 ]
 
 var GuiltyQuoteList = [
@@ -66,4 +74,5 @@ var GuiltyQuoteList = [
     QuoteObject(quoteEntry: "No matter how frustrated, disappointed and discouraged we may feel in the face of our failures, it's only temporary. And the faster you can stop wallowing in guilt, blame or resentment, the faster you can put it behind you.", authorName: "Fabrizio Moreira", imageView: "FabrizioMoreira", wikiLink: "https://en.wikipedia.org/wiki/Fabrizio_Moreira"),
     QuoteObject(quoteEntry: "What you believe is very powerful. If you have toxic emotions of fear, guilt and depression, it is because you have wrong thinking, and you have wrong thinking because of wrong believing.", authorName: "Joseph Prince", imageView: "JosephPrince", wikiLink: "https://en.wikipedia.org/wiki/Joseph_Prince"),
     QuoteObject(quoteEntry: "Negative emotions like loneliness, envy, and guilt have an important role to play in a happy life; they're big, flashing signs that something needs to change.", authorName: "Gretchen Rubin", imageView: "GretchenRubin", wikiLink: "https://en.wikipedia.org/wiki/Gretchen_Rubin"),
+    QuoteObject(quoteEntry: "I get up and pace the room, as if I can leave my guilt behind me. But it tracks me as I walk, an ugly shadow made by myself.", authorName: "Rosamund Lupton", imageView: "RosamundLupton", wikiLink: "https://en.wikipedia.org/wiki/Rosamund_Lupton")
 ]
